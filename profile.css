@@ -1,0 +1,124 @@
+
+body{
+font-family: Arial, sans-serif, Helvetica;
+font-size: 20px;
+margin: auto;
+
+
+}
+
+header{
+	background: teal;
+	border-bottom: white 2px solid;
+}
+
+
+.container{
+	margin: auto;
+	width: 80%;
+	overflow: hidden;
+}
+
+nav li a {
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+nav li  {
+	
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+}
+nav {
+	
+	float: right;
+
+}
+
+#home{
+	float: left;
+	color: gold;
+}
+
+nav li:hover{
+	border-bottom: gold 2px solid ;
+}
+
+.showcase{
+	background: url("sunset.jpg") no-repeat 0, 0px;
+	text-align: center;
+	height: 400px;
+	color: white;
+}
+
+.showcase{
+
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  	 /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.showcase h1{
+	font-size: 40px;
+	font-weight: bolder;
+	line-height: 50px;
+	margin-top: 30px;
+}
+.showcase p{
+	font-size: 20px;
+	
+	margin-top: 60px;
+}
+
+.Subscribe {
+	background: slategray;
+	height: 100px;
+}
+
+#newsletter h1{
+	float: left;
+	padding-top: 20px;
+}
+#newsletter #newsForm{
+	float: right;
+	padding-top: 30px;
+	font-size: 40px;
+}
+
+.container #moveTotop {
+	text-decoration: none;
+	float: right;
+}
+
+#footer{
+	font-size: 15px;
+	padding: 10px;
+	margin-top: 10px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
+
+#profile{
+	text-align: justify;
+	float: left;
+	width: 50%;
+	padding-right: 20px;
+
+}
+
+#asideOne{
+	float: right;
+	text-align: justify;
+	width: 45%;
+
+	
+	}
