@@ -13,6 +13,7 @@ header{
 }
 
 
+
 .container{
 	margin: auto;
 	width: 80%;
@@ -83,15 +84,26 @@ nav li:hover{
 	height: 100px;
 }
 
-#newsletter h1{
+#newsletter h3{
 	float: left;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 #newsletter #newsForm{
 	float: right;
 	padding-top: 30px;
 	font-size: 40px;
+
 }
+
+#newsletter #newsForm input{
+	color: red;
+	font-size: 15px;
+}
+
+#newsletter #newsForm input:hover{
+	cursor: pointer;
+}
+
 
 .container #moveTotop {
 	text-decoration: none;
@@ -119,6 +131,23 @@ nav li:hover{
 	float: right;
 	text-align: justify;
 	width: 45%;
-
-	
 	}
+
+	.newsForm input[type='text'],
+	.newsForm input[type='email']{
+		border: 0;
+		border-bottom: 1px gold solid;
+	}
+
+	.newsForm input:focus{
+		outline: none;
+	}
+
+	#btn:hover{
+	transform:  scale(0.98);
+}
+#btn-outline{
+	background:  blue;
+	border:  1px #fff solid;
+	background-color: green;
+}
