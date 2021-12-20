@@ -12,8 +12,6 @@ header{
 	border-bottom: white 2px solid;
 }
 
-
-
 .container{
 	margin: auto;
 	width: 80%;
@@ -79,10 +77,27 @@ nav li:hover{
 	margin-top: 60px;
 }
 
-.Subscribe {
+.subscribe {
 	background: slategray;
 	height: 100px;
+
 }
+
+/*
+.footer::before, .footer::after{
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: -70px;
+	right: 0;
+	left: 0;
+	background: slategray;
+	transform: skewY(-3deg);
+
+}
+
+*/
+
 
 #newsletter h3{
 	float: left;
@@ -110,16 +125,15 @@ nav li:hover{
 	float: right;
 }
 
-#footer{
+.footer {
 	font-size: 15px;
 	padding: 10px;
-	margin-top: 10px;
 	color: #ffffff;
 	background-color: #e8491d;
 	text-align: center;
 }
 
-#profile{
+#profile {
 	text-align: justify;
 	float: left;
 	width: 50%;
@@ -127,7 +141,7 @@ nav li:hover{
 
 }
 
-#asideOne{
+#asideOne {
 	float: right;
 	text-align: justify;
 	width: 45%;
@@ -139,7 +153,7 @@ nav li:hover{
 		border-bottom: 1px gold solid;
 	}
 
-	.newsForm input:focus{
+	.newsForm input:focus {
 		outline: none;
 	}
 
@@ -150,4 +164,77 @@ nav li:hover{
 	background:  blue;
 	border:  1px #fff solid;
 	background-color: green;
+}
+
+img{
+	width: 250px;
+	height: 300px;
+}
+
+
+img{
+	transition: all 0.2s;
+}
+img:hover{
+	transform: scale(1.1);
+}
+
+.grid-3{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+
+.projects{
+	background: teal;
+}
+
+img:hover{
+	cursor: pointer;
+}
+
+.card{
+	background: #a1b3a5;
+	width: 400px;
+	padding-top: 20px;
+	padding-left: 30px;
+	border-radius: 10px;
+	height: 450px;
+	position: relative;
+}
+.card input[type="text"],
+.card input[type="email"]{
+	font-size: 16px;
+	border: 0;
+	border-bottom: 1px gray solid;
+	width: 90%;
+	padding: 5px;
+}
+
+.card input[type="text"],
+.card input[type="email"]:focus{
+	outline: none;
+}
+
+.enquiry-note:focus{
+	outline: none;
+}
+
+.form-control{
+	padding: 10px;
+}
+
+.personal-info, .services-heading, .contact-info{
+	background: #d4cfc7;
+
+}
+
+.grid-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.contact-aside{
+	text-align: justify;
 }
