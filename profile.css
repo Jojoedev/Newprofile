@@ -1,6 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 body{
-font-family: Arial, sans-serif, Helvetica;
+font-family: 'lato', sans-serif;
 font-size: 20px;
 margin: auto;
 
@@ -103,29 +104,24 @@ nav li:hover{
 	float: left;
 	padding-top: 15px;
 }
-#newsletter #newsForm{
+	#newsletter #newsForm{
 	float: right;
 	padding-top: 30px;
 	font-size: 40px;
 
 }
 
-#newsletter #newsForm input{
-	color: red;
+	#newsletter #newsForm input{
+
 	font-size: 15px;
 }
 
-#newsletter #newsForm input:hover{
-	cursor: pointer;
-}
-
-
-.container #moveTotop {
+	.container #moveTotop {
 	text-decoration: none;
 	float: right;
 }
 
-.footer {
+	.footer {
 	font-size: 15px;
 	padding: 10px;
 	color: #ffffff;
@@ -133,7 +129,7 @@ nav li:hover{
 	text-align: center;
 }
 
-#profile {
+	#profile {
 	text-align: justify;
 	float: left;
 	width: 50%;
@@ -141,7 +137,7 @@ nav li:hover{
 
 }
 
-#asideOne {
+	#asideOne {
 	float: right;
 	text-align: justify;
 	width: 45%;
@@ -151,33 +147,40 @@ nav li:hover{
 	.newsForm input[type='email']{
 		border: 0;
 		border-bottom: 1px gold solid;
+
+
 	}
 
 	.newsForm input:focus {
 		outline: none;
 	}
 
-	#btn:hover{
-	transform:  scale(0.98);
-}
-#btn-outline{
-	background:  blue;
-	border:  1px #fff solid;
-	background-color: green;
-}
+	/* BTN utility */
 
-img{
-	width: 250px;
-	height: 300px;
-}
+	.btn:hover {
+		cursor: pointer;
+	}
+
+	.btn	{
+	color: white;
+	font-weight: 200;
+	background-color: dodgerblue;
+	}
+
+	
+	img{
+		
+		width: 250px;
+  	height: 300px;
+	}
 
 
-img{
+	img{
 	transition: all 0.2s;
-}
-img:hover{
+	}
+	img:hover{
 	transform: scale(1.1);
-}
+	}
 
 .grid-3{
 	display: grid;
@@ -237,4 +240,74 @@ img:hover{
 
 .contact-aside{
 	text-align: justify;
+}
+
+
+/* Media Query for Contact*/
+
+@media screen and (max-width: 934px)
+{
+img{
+		
+		width: 180px;
+  	height: 200px;
+	}
+	
+}
+@media screen and (max-width: 896px)
+{
+img{
+		
+		width: 150px;
+  	height: 170px;
+	}
+	
+}
+
+@media screen and (max-width: 746px)
+{
+img{
+		
+		width: 120px;
+  	height: 140px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 310px)
+{
+img{
+		
+		width: 60px;
+  	height: 80px;
+	}
+	
+}
+
+@media screen and (max-width: 190px)
+{
+img{
+		
+		width: 40px;
+  	height: 60px;
+	}
+	
+}
+@media screen and (max-width: 190px)
+{
+	.mediaquery h1, p, a{
+		font-size: 10px;
+	}
 }

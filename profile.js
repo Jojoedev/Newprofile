@@ -6,7 +6,7 @@
 //min = today.getMinutes();
 //sec = today.getSeconds();
 //timeNow =(`${hour}:${min}:${sec}`);
-
+/*
 var today = new Date()
 hour = today.getHours();
 let timeOfDay
@@ -27,6 +27,6 @@ setTimeout(function(){
 greeting.style.color="green"
 }, 8000)
 
-
+*/
 
  
