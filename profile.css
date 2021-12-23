@@ -176,8 +176,9 @@ nav li:hover{
 
 
 	img{
-	transition: all 0.2s;
+	transition: 0.2s ease all;
 	}
+
 	img:hover{
 	transform: scale(1.1);
 	}
@@ -243,71 +244,93 @@ img:hover{
 }
 
 
-/* Media Query for Contact*/
+/* Tablets and under */
 
-@media screen and (max-width: 934px)
-{
+@media(max-width: 768px) {
 img{
-		
-		width: 180px;
-  	height: 200px;
-	}
-	
-}
-@media screen and (max-width: 896px)
-{
-img{
-		
-		width: 150px;
-  	height: 170px;
+		display: grid;
+		grid-wrap: wrap;
 	}
 	
 }
 
-@media screen and (max-width: 746px)
-{
-img{
-		
-		width: 120px;
-  	height: 140px;
+/* Mobile */
+@media(max-width: 500px) {
+.navbar{
+	height: 110px;
 	}
-	
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 310px)
-{
-img{
-		
-		width: 60px;
-  	height: 80px;
+	.navbar .flex{
+		flex-direction: column;
 	}
-	
-}
-
-@media screen and (max-width: 190px)
-{
-img{
-		
-		width: 40px;
-  	height: 60px;
+	.navbar ul{
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.1);
 	}
-	
-}
-@media screen and (max-width: 190px)
-{
-	.mediaquery h1, p, a{
+	img{
+		width: 80px;
+		height: 100px;
+	}
+
+	.subscribe #newsletter{
 		font-size: 10px;
+		padding: 0;
+		margin: 0;
+	}
+
+	#newsForm input{
+	max-width: 120px; 
+	/*width: fit-content;*/
+	float: left;
+	margin: 0;
+	line-height: 15px;
+
+		}
+
+	.btn{
+	box-sizing: 10px;
+		}
+	
+
+	header{
+		line-height: 20px;
+		font-size: 20px;
+		margin-top: auto;
+	}
+
+	.showcase h1, p{
+		font-size: 20px;
+	}
+
+	img{
+		width: 60px;
+		height: 60px;
+		display: inline-flex;
+		flex-wrap: wrap;
+		
+
+	}
+
+	.personal-info #profile, #asideOne{
+	font-size: 15px;
+	width: fit-content;
+	}
+
+	.personal-info #asideOne{
+	float: left;
+	}
+
+	.grid-2 {
+		font-size: 20px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+.form-control{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 50px;
+		font-size: 10px;
+
 	}
 }
