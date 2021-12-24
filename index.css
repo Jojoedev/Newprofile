@@ -221,8 +221,9 @@ img:hover{
 	outline: none;
 }
 
-textarea{
+.text-area{
 	width: 90%;
+	height: 80px;
 }
 .personal-info, .services-heading, .contact-info{
 	background: #d4cfc7;
