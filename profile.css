@@ -6,6 +6,7 @@ font-size: 20px;
 margin: auto;
 
 
+
 }
 
 header{
@@ -111,7 +112,7 @@ padding-bottom: 30px;
 }
 	#newsletter #newsForm{
 	float: right;
-	padding-top: 30px;
+	padding-top: 20px;
 	font-size: 40px;
 
 }
@@ -162,8 +163,8 @@ padding-bottom: 30px;
 	
 	img{
 		
-		width: 250px;
-  	height: 300px;
+		width: 150px;
+  	height: 180px;
 	}
 
 
@@ -235,12 +236,22 @@ img:hover{
 	text-align: justify;
 }
 
+.projects .grid-3 label{
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	
+}
 
 /* Tablets and under */
 
 @media(max-width: 768px) {
 .grid-3 {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	img{
+		width: 200px;
+  	height: 250px;
 	}
 
 	.subscribe #newsletter{
@@ -263,6 +274,7 @@ width: auto;
 .contact-info h2{
 	font-size: 20px;
 }
+
 }
 	
 
@@ -280,11 +292,7 @@ width: auto;
 		padding: 10px;
 		background-color: rgba(0, 0, 0, 0.1);
 	}
-	img{
-		width: 80px;
-		height: 100px;
-		padding-top: 10px;
-	}
+	
 
 	.subscribe #newsletter{
 		font-size: 10px;
@@ -321,12 +329,11 @@ width: auto;
 	}
 
 	img{
-		width: 60px;
-		height: 60px;
-		display: inline-flex;
-		flex-wrap: wrap;
 		
-
+		width: 300px;
+  	height: 400px;
+  	margin: auto;
+  	
 	}
 
 	.personal-info #profile, #asideOne{
@@ -337,12 +344,18 @@ width: auto;
 	.personal-info #asideOne{
 	float: left;
 	}
-
+	
+	
 	.grid-2 {
 		font-size: 20px;
-		display: grid;
-		grid-template-columns: 1fr;
+			grid-template-columns: 1fr;
 	}
+	.grid-3 {
+		
+			grid-template-columns: 1fr;
+	}
+
+	
 
 .form-control{
 		grid-template-columns: 1fr;
