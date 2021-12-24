@@ -84,6 +84,7 @@ nav li:hover{
 	background: slategray;
 	height: 100px;
 
+
 }
 
 .containermediaquery{
@@ -195,11 +196,12 @@ img:hover{
 .card{
 	background: #a1b3a5;
 	width: auto;
-	padding-top: 20px;
-	padding-left: 20px;
+	padding: 20px 20px;
+	
 	border-radius: 5px;
-	height: 220px;
+	height: 300px;
 	position: relative;
+
 }
 .card input[type="text"],
 .card input[type="email"]{
@@ -219,7 +221,9 @@ img:hover{
 	outline: none;
 }
 
-
+textarea{
+	width: 90%;
+}
 .personal-info, .services-heading, .contact-info{
 	background: #d4cfc7;
 
