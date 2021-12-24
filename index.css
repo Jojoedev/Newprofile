@@ -132,7 +132,8 @@ padding-bottom: 30px;
 	font-size: 15px;
 	padding: 10px;
 	color: #ffffff;
-	background-color: #e8491d;
+	background-color: gray;
+	border-top: 2px white solid;
 	text-align: center;
 }
 
@@ -156,9 +157,12 @@ padding-bottom: 30px;
 	}
 
 	.btn	{
-	color: white;
+
 	font-weight: 200;
-	background-color: dodgerblue;
+	}
+	.btn:hover	{
+
+	background: gold;
 	}
 
 	
