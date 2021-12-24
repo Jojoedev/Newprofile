@@ -107,7 +107,7 @@ padding-bottom: 30px;
 
 #newsletter h3{
 	float: left;
-	padding-top: 15px;
+	
 }
 	#newsletter #newsForm{
 	float: right;
@@ -133,13 +133,6 @@ padding-bottom: 30px;
 	background-color: #e8491d;
 	text-align: center;
 }
-
-	
-
-	
-	
-	
-
 
 
 	.newsForm input[type='text'],
@@ -175,12 +168,14 @@ padding-bottom: 30px;
 
 
 	img{
-	transition: 0.2s ease all;
+	transition: 0.2s all;
 	}
 
 	img:hover{
-	transform: scale(1.1);
+	transform: scale(1.2);
 	}
+
+
 
 .grid-3{
 	display: grid;
@@ -244,12 +239,33 @@ img:hover{
 /* Tablets and under */
 
 @media(max-width: 768px) {
-img{
-		display: grid;
-		grid-wrap: wrap;
+.grid-3 {
+		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.subscribe #newsletter{
+		font-size: 12px;
+		margin: auto;
+		height: auto;
+
+	}
+
+	#newsForm input[type="email"]
+	 {
+	width: 110px; 
+	line-height: 10px;
 	
+
 }
+#newsForm input[type="submit"]{
+width: auto;
+}
+.contact-info h2{
+	font-size: 20px;
+}
+}
+	
+
 
 /* Mobile */
 @media(max-width: 500px) {
@@ -267,6 +283,7 @@ img{
 	img{
 		width: 80px;
 		height: 100px;
+		padding-top: 10px;
 	}
 
 	.subscribe #newsletter{
@@ -276,13 +293,17 @@ img{
 	}
 
 	#newsForm input{
-	max-width: 120px; 
+	width: 110px; 
 	/*width: fit-content;*/
 	float: left;
-	margin: 0;
-	line-height: 15px;
-
+	margin-bottom: 10px;
+		
 		}
+
+#newsForm input[type="email"] {
+ 
+	
+}
 
 	.btn{
 	box-sizing: 10px;
@@ -320,7 +341,7 @@ img{
 	.grid-2 {
 		font-size: 20px;
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: 1fr;
 	}
 
 .form-control{
@@ -331,14 +352,9 @@ img{
 
 .grid-2{
 	grid-template-columns: 1fr;
-	
+	}
 
+.contact-info h2{
+	font-size: 15px;
 }
-
-/*textarea,.card input[type="text"],
-.card input[type="email"]{
-	width: 100%;
-}*/
-
-
 }
