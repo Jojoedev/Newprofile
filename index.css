@@ -108,6 +108,35 @@ padding-bottom: 30px;
 */
 
 
+.showcase{
+	animation: slideFromLeft 1s ease-in;
+}
+
+.subscribe{
+	animation: slideFromRight 1s ease-in;
+}
+
+
+/*Animation */
+
+
+
+@keyframes slideFromLeft {
+	0% {transform: translateX(-100%)
+	}
+	100% {transform: translateX(0);}
+
+}
+
+@keyframes slideFromRight {
+	0% {transform: translateX(100%)
+	}
+	100% {transform: translateX(0);}
+
+}
+
+
+
 #newsletter h3{
 	float: left;
 	
