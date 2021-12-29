@@ -108,14 +108,17 @@ padding-bottom: 30px;
 */
 
 
-.showcase{
+.showcase, .services-heading{
 	animation: slideFromLeft 1s ease-in;
 }
 
-.subscribe{
+.subscribe {
 	animation: slideFromRight 1s ease-in;
 }
 
+.contact-info {
+	animation: slideFromTop 1s ease-in;
+}
 
 /*Animation */
 
@@ -130,6 +133,13 @@ padding-bottom: 30px;
 
 @keyframes slideFromRight {
 	0% {transform: translateX(100%)
+	}
+	100% {transform: translateX(0);}
+
+}
+
+@keyframes slideFromTop {
+	0% {transform: translateY(100%)
 	}
 	100% {transform: translateX(0);}
 
